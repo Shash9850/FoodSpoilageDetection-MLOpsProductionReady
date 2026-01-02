@@ -1,0 +1,17 @@
+artifacts:
+  raw_data_dir: artifacts/raw
+  processed_data_dir: artifacts/processed
+  model_dir: artifacts/models
+
+training:
+  batch_size: 16
+  learning_rate: 0.001
+  num_epochs: 5
+
+model:
+  name: food_spoilage_cnn
+  input_size: [3, 224, 224]
+
+dataset:
+  train_dir: data/train
+  test_dir: data/test

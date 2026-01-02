@@ -1,0 +1,162 @@
+/* 
+GLOBAL RESET
+Keeps layout consistent across browsers
+*/
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+BODY
+Soft gradient background + center alignment
+*/
+body {
+    font-family: "Poppins", sans-serif;
+    background: linear-gradient(135deg, #eef2f3, #d9e4ec);
+    min-height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 20px;
+}
+
+/* 
+MAIN CARD
+Minimalist white card with rounded corners
+*/
+.card {
+    background: #ffffff;
+    width: 100%;
+    max-width: 420px;
+
+    padding: 32px;
+    border-radius: 18px;
+
+    text-align: center;
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08);
+}
+
+/* 
+HEADINGS
+Clear visual hierarchy
+*/
+h1 {
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.subtitle {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 24px;
+}
+
+/* 
+UPLOAD BOX
+Dashed border + hover animation
+*/
+.upload-box {
+    display: block;
+    border: 2px dashed #cbd5e1;
+    border-radius: 14px;
+
+    padding: 22px;
+    margin-bottom: 16px;
+
+    cursor: pointer;
+    color: #555;
+
+    transition: all 0.25s ease;
+}
+
+.upload-box:hover {
+    border-color: #6366f1;
+    color: #6366f1;
+    background: #f8fafc;
+}
+
+/* Hide default file input */
+.upload-box input {
+    display: none;
+}
+
+/* 
+IMAGE PREVIEW
+Appears only after image selection
+*/
+.preview {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 18px;
+    display: none;
+}
+
+/* 
+PREDICT BUTTON
+Soft color + hover transition
+*/
+button {
+    width: 100%;
+    padding: 12px;
+
+    border: none;
+    border-radius: 10px;
+
+    background: #6366f1;
+    color: white;
+
+    font-size: 15px;
+    font-weight: 500;
+
+    cursor: pointer;
+    transition: background 0.25s ease, transform 0.15s ease;
+}
+
+button:hover {
+    background: #4f46e5;
+    transform: translateY(-1px);
+}
+
+/* 
+RESULT SECTION
+Clean badge-style output
+*/
+.result {
+    margin-top: 22px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 10px 22px;
+
+    border-radius: 999px;
+
+    font-size: 16px;
+    font-weight: 500;
+
+    background: #ecfdf5;
+    color: #065f46;
+}
+
+/* 
+RESPONSIVE ADJUSTMENTS
+Small screens (mobile)
+*/
+@media (max-width: 480px) {
+    .card {
+        padding: 24px;
+    }
+
+    h1 {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 13px;
+    }
+}
